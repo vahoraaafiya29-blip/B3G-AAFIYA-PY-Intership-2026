@@ -1,8 +1,7 @@
-words=["apple","ant","banana","cat","carrot"]
+word=["Apple","Ant","Banana","Cat","Carrot"]
+group={}
+for A in word:
+    letter=A[0]
+    group.setdefault(letter,[]).append(A)
 
-grouped={}
-
-for word in words:
-    grouped.setdefault(word[0],[]).append(word)
-
-    print(grouped)
+print(group)
