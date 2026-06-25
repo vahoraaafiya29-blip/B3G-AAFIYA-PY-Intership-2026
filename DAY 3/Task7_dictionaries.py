@@ -1,21 +1,16 @@
-inventory = {
-    "Pen": 100,
-    "Notebook": 50
-}
+inventory={"Pen":110,"NoteBook":50}
 
-inventory["Pen"]=inventory["Pen"] + 10
-product="Notebook"
-
-if"Notebook"in inventory:
-    inventory["Notebook"]=inventory["Notebook"]-1
-    print("Notebook sold")
+if"NoteBook" in inventory:
+    inventory["NoteBook"] -= 1
+    print("NoteBook Sold")
 else:
-    print("Notebook Not Found")
-    product="Bag"
+    print("NoteBook Not Found")
 
-    if "Bag" in inventory:
-        inventory["Bag"]=inventory["Bag"]-1
-    else:
+if"Bag" in inventory:
+        inventory["Bag"] -= 1
+        print("Bag Sold")
+else:
         print("Bag Not Found")
-        print("Updated Inventory:")
-        print(inventory)
+
+print("Updated Inventory:")
+print(inventory)
