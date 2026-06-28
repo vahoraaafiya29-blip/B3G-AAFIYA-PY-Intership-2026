@@ -1,5 +1,5 @@
-users=["Ram","Aafiya","Phython","Ali","Student"]
+username=["Sujan","Aafiya","Aksha","Ilma","jiya"]
+valid_username=list(filter(lambda name:len(name)>=6,username))
 
-result=list(filter(lambda X:len(X) >=6,users))
-
-print(result)
+print("username with at least 6 characters:")
+print(valid_username)

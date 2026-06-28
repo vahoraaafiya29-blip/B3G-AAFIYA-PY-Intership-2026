@@ -1,7 +1,12 @@
 from functools import reduce
+numbers=[10,45,22,29,89,67]
 
-numbers=[10,45,22,89,67]
-
-largest=reduce(lambda a,b:a if a>b else b,numbers)
-
-print("Largest Number:",largest)
+def find_largest(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+    
+largest=reduce(find_largest,numbers)
+print("List Of Number:",numbers)
+print("The Largest Number in the List is:",largest)

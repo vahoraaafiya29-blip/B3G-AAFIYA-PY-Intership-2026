@@ -1,6 +1,7 @@
 def apply_discount(price,percent=10):
-    final=price-(price*percent/100)
-    print("Final Price:",final)
+    discount=price*percent/100
+    final_price=price-discount
+    return final_price
 
-apply_discount(1000)
-apply_discount(1000,percent=20)
+print("price After Default Discount:",apply_discount(4500))
+print("price After 20% Discount:",apply_discount(6500,percent=20))
